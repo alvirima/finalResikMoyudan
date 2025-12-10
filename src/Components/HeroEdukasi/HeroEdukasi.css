@@ -2,7 +2,7 @@
 .hero-edukasi {
   margin-top: 80px;
   text-align: center;
-  padding: 20px;
+  padding: 32px;
   font-family: "Inter", sans-serif;
 }
 
@@ -56,4 +56,23 @@
   font-size: 45px;
   font-weight: 700;
   font-family: "inter", sans-serif;
+  animation: popInFromBack 0.8s ease-out 0.2s forwards;
+}
+
+@media (max-width: 1180px), (-webkit-min-device-pixel-ratio: 2) {
+  .hero-edukasi {
+    margin-top: 60px;
+  }
+
+  .tabs {
+    margin: 10px 0 50px 30px;
+  }
+
+  .tab {
+    font-size: 15px;
+  }
+
+  .panel h2 {
+    font-size: 40px;
+  }
 }

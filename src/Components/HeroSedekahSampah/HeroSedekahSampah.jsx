@@ -4,7 +4,7 @@ import fotoSedekahSampah from "../../Assets/fotoSedekahSampah.png";
 
 const HeroSedekahSampah = () => {
   return (
-    <div className="container">
+    <div className="ss-container">
       <div>
         <div className="ss-content">
           <p>

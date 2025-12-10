@@ -17,7 +17,7 @@ const Pengomposan = () => {
               </span>
               (seperti sisa makanan dan daun) oleh mikroorganisme. Proses ini
               disebut pengomposan (composting). Kompos sendiri dibagi menjadi
-              dua jenis, yaitu <span>kompoos padat </span>dan{" "}
+              dua jenis, yaitu <span>kompos padat </span>dan{" "}
               <span>kompos cair</span>, yang masing-masing memiliki manfaat dan
               cara penggunaan yang berbeda.
             </p>
@@ -37,7 +37,7 @@ const Pengomposan = () => {
                 terbuang).
               </li>
               <li>
-                <span>Ekonomis:</span>Menghemat pengeluaran untuk pupuk kimia.
+                <span>Ekonomis: </span>Menghemat pengeluaran untuk pupuk kimia.
               </li>
             </ol>
           </div>

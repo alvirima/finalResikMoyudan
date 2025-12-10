@@ -25,7 +25,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/"
-                className={({ isActive }) => (isActive ? "btn" : "")}
+                className={({ isActive }) => (isActive ? "button" : "")}
               >
                 Home
               </NavLink>
@@ -33,7 +33,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/sedekahSampah"
-                className={({ isActive }) => (isActive ? "btn" : "")}
+                className={({ isActive }) => (isActive ? "button" : "")}
               >
                 Sedekah Sampah
               </NavLink>
@@ -41,7 +41,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/edukasi"
-                className={({ isActive }) => (isActive ? "btn" : "")}
+                className={({ isActive }) => (isActive ? "button" : "")}
               >
                 Edukasi
               </NavLink>
@@ -49,7 +49,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/aboutUs"
-                className={({ isActive }) => (isActive ? "btn" : "")}
+                className={({ isActive }) => (isActive ? "button" : "")}
               >
                 About Us
               </NavLink>

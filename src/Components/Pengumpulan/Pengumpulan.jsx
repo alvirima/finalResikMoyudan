@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import "./Pengumpulan.css";
 import {
   BarChart,
@@ -42,17 +42,34 @@ const Pengumpulan = () => {
     "#9EBC9E",
   ];
 
+  const [isTablet, setIsTablet] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsTablet(window.innerWidth <= 1000);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="chart-container">
       <div className="chart-box">
-        <ResponsiveContainer width="100%" height={420}>
+        <ResponsiveContainer width="100%" height={isTablet ? 380 : 420}>
           <BarChart
             data={data}
             barCategoryGap={20}
-            margin={{ top: 40, right: 30, left: 60, bottom: 20 }}
+            margin={{
+              top: 40,
+              right: isTablet ? 10 : 50,
+              left: isTablet ? 10 : 50,
+              bottom: 20,
+            }}
           >
             <text
-              x={60}
+              x={isTablet ? 20 : 60}
               y={15}
               textAnchor="start"
               style={{
@@ -68,9 +85,10 @@ const Pengumpulan = () => {
             {/* X Axis */}
             <XAxis
               dataKey="month"
-              tick={{ fontSize: 12 }}
+              tick={{ fontSize: isTablet ? 10 : 12 }}
               axisLine={false}
               tickLine={false}
+              interval={0}
             />
 
             {/* Y Axis */}
@@ -86,7 +104,11 @@ const Pengumpulan = () => {
             />
 
             {/* Bar dengan warna alternating */}
-            <Bar dataKey="total" radius={[0, 0, 0, 0]} barSize={60}>
+            <Bar
+              dataKey="total"
+              radius={[0, 0, 0, 0]}
+              barSize={isTablet ? 40 : 65}
+            >
               <LabelList
                 dataKey="total"
                 position="top"

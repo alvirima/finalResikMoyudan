@@ -11,6 +11,7 @@
   display: flex;
   text-align: center;
   margin-top: 0;
+  gap: 20px;
 }
 
 .card {
@@ -21,6 +22,12 @@
   padding: 20px;
   margin: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .icon-prog {
@@ -57,4 +64,26 @@ button {
   font-family: poppins, sans-serif;
   font-size: 11px;
   cursor: pointer;
+}
+
+@media (max-width: 1180px), (-webkit-min-device-pixel-ratio: 2) {
+  .card {
+    width: 350px;
+    height: 390px;
+    padding: 15px;
+  }
+
+  .icon-prog {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px auto;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 12px;
+  }
 }

@@ -1,17 +1,16 @@
 .kompos {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin: 40px 20px 70px;
 }
 
 .kompos-left {
-  max-width: 500px;
-  text-align: left;
   margin-right: 40px;
   background: #fff;
   padding: 20px;
   border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.7s ease-out;
 }
 
 .kompos-left-isi {
@@ -19,6 +18,7 @@
   font-size: 21px;
   padding: 20px 30px;
   color: #47663b;
+  text-align: justify;
 }
 
 .kompos-left-isi span {
@@ -32,9 +32,15 @@
   margin-bottom: 10px;
 }
 
+.kompos-left-isi ol {
+  padding-left: 1.25rem;
+  margin: 5px 0;
+  text-align: justify;
+}
+
 .kompos-right {
-  max-width: 500px;
-  margin-top: 70px;
+  padding: 10px;
+  animation: fadeInUp 0.7s ease-out;
 }
 
 /* bagian 2 */
@@ -114,6 +120,14 @@
   font-family: inter, sans-serif;
   font-size: 21px;
   color: #47663b;
-  margin-bottom: 15px;
   text-align: left;
+  padding-left: 30px;
+  margin: 10px 0 10px;
+  text-align: justify;
+}
+
+@media (max-width: 1180px), (-webkit-min-device-pixel-ratio: 2) {
+  .kompos-left-isi {
+    font-size: 18px;
+  }
 }

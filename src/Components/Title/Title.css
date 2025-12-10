@@ -8,6 +8,8 @@
   font-size: 50px;
   font-weight: 700;
   margin-top: 150px;
+  opacity: 0;
+  transform: scale(0.9);
 }
 
 .title2 {
@@ -16,6 +18,8 @@
   font-weight: 600;
   color: #1f4529;
   text-transform: none;
+  opacity: 0;
+  transform: scale(0.9);
 }
 
 .title p {
@@ -26,4 +30,42 @@
   margin-bottom: 40px;
   margin-top: 10px;
   text-transform: none;
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.title h1,
+.title2,
+.title p {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.animate {
+  animation: popInFromBack 0.8s ease-out forwards;
+}
+
+@keyframes popInFromBack {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1180px), (-webkit-min-device-pixel-ratio: 2) {
+  .title h1 {
+    font-size: 40px;
+  }
+
+  .title2 {
+    font-size: 35px;
+  }
+
+  .title p {
+    font-size: 14px;
+  }
 }

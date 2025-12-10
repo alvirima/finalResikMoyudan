@@ -62,9 +62,9 @@ nav ul li {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  padding: 10px 24px;
+  padding: 8px 24px;
   border-radius: 10px;
-  background-color: white;
+  background-color: #e9e9e9;
   color: #1f4529;
   text-decoration: none;
   border: none;
@@ -74,17 +74,6 @@ nav ul li {
 .signin-btn:hover {
   background: #1f4529;
   color: #ffffff;
-}
-
-.blur-nav {
-  width: 85%;
-  margin: 16px auto;
-  backdrop-filter: blur(14px);
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 999px;
-  padding: 10px 40px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-  transition: all 0.4s ease;
 }
 
 .nav-links {
@@ -109,7 +98,7 @@ nav ul li {
   color: #9ebc9e;
 }
 
-.btn {
+.button {
   background: #ffffff;
   color: #1f4529;
   padding: 8px 28px;
@@ -120,7 +109,16 @@ nav ul li {
   transition: all 0.3s ease;
 }
 
-.scrolled .btn {
+.scrolled .navbar-pill {
+  width: 90%;
+  max-width: 1180px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+  border-radius: 999px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.scrolled .button {
   background: #1f4529;
   color: #ffffff;
 }
@@ -135,11 +133,53 @@ nav ul li {
   color: #ffffff;
 }
 
-.scrolled .navbar-pill {
-  width: 90%;
-  max-width: 1180px;
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(14px);
-  border-radius: 999px; /* OVAL */
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+/* media query */
+@media (max-width: 1180px), (-webkit-min-device-pixel-ratio: 2) {
+  .logo {
+    width: 160px;
+    height: 60px;
+  }
+
+  .navbar-pill {
+    padding: 0 32px;
+    gap: 20px;
+  }
+
+  .nav-left {
+    gap: 20px;
+  }
+
+  nav ul li {
+    margin: 0 8px;
+    padding-right: 5px;
+  }
+
+  .signin-btn {
+    padding: 5px 10px;
+    white-space: nowrap;
+  }
+
+  .nav-links {
+    gap: 8px;
+  }
+
+  .button {
+    padding: 5px 20px;
+  }
+
+  .scrolled .navbar-pill {
+    padding: 0 8px;
+    gap: 8px;
+  }
+
+  .scrolled .nav-links {
+    gap: 2px;
+  }
+
+  .scrolled .signin-btn {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 844px), (-webkit-min-device-pixel-ratio: 3) {
 }

@@ -13,9 +13,8 @@ const Footer = () => {
           <div className="footer-text">
             <h3>Resik Moyudan</h3>
             <p>
-              Jl. Klangon - Tempel No.KM 2, RW.4,
-              <br /> Barepan, Sumberrahayu, Kec. Moyudan, <br />
-              Kabupaten Sleman, Daerah Istimewa <br /> Yogyakarta 55563
+              Jl. Klangon - Tempel No.KM 2, RW.4, Barepan, Sumberrahayu, Kec.
+              Moyudan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55563
             </p>
           </div>
         </div>

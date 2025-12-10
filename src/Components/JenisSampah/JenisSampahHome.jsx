@@ -30,8 +30,8 @@ const JenisSampah = () => {
         x={x}
         y={y}
         fill="#fff"
-        fontSize={16}
-        fontWeight="bold"
+        fontSize={20}
+        fontWeight="semiBold"
         textAnchor="middle"
         dominantBaseline="central"
       >

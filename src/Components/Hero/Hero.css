@@ -50,6 +50,12 @@
   cursor: pointer;
 }
 
+.stat-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(31, 69, 41, 0.15);
+  z-index: 4;
+}
+
 .stat-card img {
   width: 90px;
   height: 90px;
@@ -84,4 +90,29 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media (max-width: 1180px), (-webkit-min-device-pixel-ratio: 2) {
+  .hero-card {
+    gap: 10px;
+  }
+
+  .stat-card {
+    padding: 10px 14px;
+    gap: 10px;
+  }
+
+  .stat-card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .stat-card h3 {
+    font-size: 30px;
+    margin: 0 0 6px 0;
+  }
+
+  .stat-card p {
+    font-size: 15px;
+  }
 }

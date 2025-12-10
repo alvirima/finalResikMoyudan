@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./SampahDiterima.css";
 import SampahKaleng from "../../assets/SampahKaleng.png";
 import SampahPlastik from "../../assets/SampahPlastik.png";
@@ -36,14 +36,25 @@ const data = [
   },
 ];
 
+const CARD_WIDTH = 320;
+
 const SampahDiterima = () => {
   const [index, setIndex] = useState(0);
+  const [visibleCard, setVisibleCard] = useState(3);
 
-  const CARD_WIDTH = 350;
-  const VISIBLE_CARD = 3;
+  useEffect(() => {
+    const handleResize = () => {
+      setVisibleCard(window.innerWidth <= 1000 ? 2 : 3);
+      setIndex(0);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const next = () => {
-    if (index < data.length - 3) {
+    if (index < data.length - visibleCard) {
       setIndex(index + 1);
     }
   };
@@ -56,7 +67,7 @@ const SampahDiterima = () => {
 
   return (
     <div className="carousel">
-      <button className="nav left" onClick={prev}>
+      <button className="btn left" onClick={prev}>
         ❮
       </button>
 
@@ -92,7 +103,7 @@ const SampahDiterima = () => {
         </div>
       </div>
 
-      <button className="nav right" onClick={next}>
+      <button className="btn right" onClick={next}>
         ❯
       </button>
     </div>

@@ -16,12 +16,17 @@ const HeroAboutUs = () => {
           <br />
           <strong>“Resik Moyudan”</strong> sendiri merupakan nama yang diambil
           dari dua kata, yaitu:
-          <br />• <strong>“Resik”</strong> berasal dari bahasa Jawa yang berarti
-          bersih
-          <br />• <strong>“Moyudan”</strong> adalah nama dusun tempat
-          pelaksanaan program KKN ini
-          <br />
-          <br />
+          <ul>
+            <li>
+              <strong>"Resik" </strong>berasal dari bahasa jawa yang berarti{" "}
+              <strong>bersih</strong>, melambangkan semangat menjaga kebersihan
+              dan kelestarian lingkungan
+            </li>
+            <li>
+              <strong>"Moyudan" </strong>adalah nama <strong>dusun </strong>
+              tempat pelaksanaan program ini
+            </li>
+          </ul>
           Dengan nama ini, diharapkan kegiatan KKN Tematik Resik Moyudan dapat
           membantu masyarakat dalam meningkatkan kesadaran lingkungan, mengelola
           sampah dengan bijak, serta menjadikan sampah bernilai sosial melalui

@@ -21,3 +21,20 @@
   font-size: 18px;
   line-height: 1.5;
 }
+
+.au-card p ul {
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
+  text-align: justify;
+}
+
+@media (max-width: 1180px), (-webkit-min-device-pixel-ratio: 2) {
+  .au-card {
+    width: 750px;
+    height: 430px;
+  }
+
+  .au-card p {
+    font-size: 17px;
+  }
+}

@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .pemilahan-wrapper {
   display: flex;
   justify-content: center;
@@ -56,7 +62,7 @@
   font-family: inter, sans-serif;
   font-size: 21px;
   color: #47663b;
-  text-align: left;
+  text-align: justify;
   margin-bottom: 8px;
 }
 
@@ -64,8 +70,14 @@
   font-family: inter, sans-serif;
   font-size: 18px;
   color: #47663b;
-  text-align: left;
+  text-align: justify;
   margin-bottom: 8px;
+}
+
+.card-isiEdukasiPemilahan ul {
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
+  text-align: justify;
 }
 
 .card-isiEdukasiPemilahan ul li {
@@ -73,5 +85,51 @@
   font-size: 18px;
   color: #47663b;
   margin-bottom: 15px;
-  text-align: left;
+  text-align: justify;
+}
+
+@media (max-width: 1180px), (-webkit-min-device-pixel-ratio: 2) {
+  .pemilahan-wrapper {
+    gap: 50px;
+  }
+
+  .pemilahan-card {
+    width: 200px;
+  }
+
+  .jenis-sampah {
+    width: 200px;
+    margin: 25px auto 10px;
+  }
+
+  .pemilahan-card h3 {
+    font-size: 18px;
+  }
+
+  .pemilahan-card p {
+    font-size: 13px;
+  }
+
+  .isiEdukasiPemilahan h2 {
+    font-size: 25px;
+  }
+
+  .card-isiEdukasiPemilahan {
+    width: 750px;
+    height: 650px;
+    padding: 30px 50px;
+    margin: 0 5px;
+  }
+
+  .card-isiEdukasiPemilahan h3 {
+    font-size: 18px;
+  }
+
+  .card-isiEdukasiPemilahan p {
+    font-size: 17px;
+  }
+
+  .card-isiEdukasiPemilahan ul li {
+    font-size: 17px;
+  }
 }

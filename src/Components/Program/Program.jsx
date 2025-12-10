@@ -14,9 +14,9 @@ const Program = () => {
           </div>
           <h2>Edukasi</h2>
           <p>
-            Temukan materi edukatif mengenai pemilahan, daur <br />
-            ulang, dan pengelolaan sampah yang bertanggung <br /> jawab untuk
-            mendukung kelestarian lingkungan.
+            Temukan materi edukatif mengenai pemilahan, daur ulang, dan
+            pengelolaan sampah yang bertanggung jawab untuk mendukung
+            kelestarian lingkungan.
           </p>
           <Link to="/Edukasi">
             <button>Selengkapnya</button>

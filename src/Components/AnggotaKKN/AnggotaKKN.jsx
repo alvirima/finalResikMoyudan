@@ -1,19 +1,12 @@
 import React, { memo } from "react";
-import {
-  Swiper,
-  SwiperSlide,
-} from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import {
-  EffectCoverflow,
-  Pagination,
-  Navigation,
-} from "swiper/modules";
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 import Hannah from "../../assets/anggota-compressed/Hannah.webp";
 import Vinka from "../../assets/anggota-compressed/Vinka.webp";
@@ -205,18 +198,11 @@ export default function ProfileSlider() {
           watchSlidesProgress={true}
           observer={true}
           observeParents={true}
-          modules={[
-            EffectCoverflow,
-            Pagination,
-            Navigation,
-          ]}
+          modules={[EffectCoverflow, Pagination, Navigation]}
           className="mySwiper"
         >
           {profiles.map((profile) => (
-            <SwiperSlide
-              key={profile.id}
-              style={styles.slideCard}
-            >
+            <SwiperSlide key={profile.id} style={styles.slideCard}>
               <ProfileCard profile={profile} />
             </SwiperSlide>
           ))}
@@ -236,7 +222,7 @@ const styles = {
   },
   sliderWrapper: {
     width: "100%",
-    maxWidth: "1000px",
+    maxWidth: "878px", // Adjusted maxWidth for better responsiveness
     padding: "0 20px",
     position: "relative",
   },
@@ -268,6 +254,7 @@ const styles = {
   },
   image: {
     width: "100%",
+    //height: "110%"
     height: "100%",
     objectFit: "cover",
   },
