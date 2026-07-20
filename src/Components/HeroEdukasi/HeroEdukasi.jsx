@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "./HeroEdukasi.css";
 import TabsEdukasi from "../TabsEdukasi/TabsEdukasi";
 import Pemilahan from "../E-PemilahanSampah/E-PemilahanSampah";
